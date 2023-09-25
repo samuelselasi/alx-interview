@@ -1,4 +1,5 @@
 # Alx-Interview
+![1_Dyu63sMUVL-gYEZISOE2BQ](https://github.com/samuelselasi/alx-interview/assets/85158665/6f0adc56-4a58-4760-a4c5-e12f64829627)
 
 ## Table of Contents
 
