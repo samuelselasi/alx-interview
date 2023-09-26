@@ -1,8 +1,9 @@
 # 0x00. Pascal's Triangle
 #### `Algorithm` `Python`
+![Pascals-Triangle](https://github.com/samuelselasi/alx-interview/assets/85158665/08af0d5b-4dfd-4a73-a76a-f06dc3a29063)
 
 ## Concepts
-
+### Pascal's Triangle
 ## Task
 
 [0. Pascal's Triangle](./0-pascal_triangle.py)
