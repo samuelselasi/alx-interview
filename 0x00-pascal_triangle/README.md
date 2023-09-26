@@ -39,3 +39,14 @@ guillaume@ubuntu:~/0x00$ ./0-main.py
 [1,4,6,4,1]
 guillaume@ubuntu:~/0x00$
 ```
+
+# Whiteboarding
+
+1. Function - `pascal_triangle(n)`
+2. Initialize an empty list to store Pascal's Triangle - `triangle = []`
+3. Check if `n` is less than or equal to zero and return an empty list
+4. Loop from `1` to `n` to store the current row in a new list = `row = []`
+5. Under the previous loop, loop through the current row elements and if the current is the first or last element set it to `1` - `row.append(1)`
+6. If not the first or last element, calculate the element by summing the 2 from the previous row and add it to the list - `row.append(element)`
+7. Add the current `row` to the `triangle` - `triangle.appemd(row)`
+8. Return the triangle
