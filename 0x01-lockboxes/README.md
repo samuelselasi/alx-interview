@@ -1,6 +1,7 @@
 # 0x01. Lockboxes
 #### `Algorithm` `Python`
 
+![a2ca62cd87e0](https://github.com/samuelselasi/alx-interview/assets/85158665/35d7c515-9ae0-46e6-972d-961f27e6d94b)
 
 ## Requirements
 ### General
