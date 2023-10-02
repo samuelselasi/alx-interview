@@ -53,3 +53,30 @@ True
 False
 carrie@ubuntu:~/0x01-lockboxes$
 ```
+
+## Background
+
+```
+In the "Lockboxes" problem, the primary data structure used is a list of lists,
+where each inner list represents a lockbox containing keys to other lockboxes.
+The problem revolves around determining if all the boxes can be opened starting from the first box.
+While the problem itself doesn't require advanced data structures or algorithms,
+there are some fundamental concepts at play:
+```
+
+1. **Lists** (***Arrays***): `Lists` (or *arrays*) are used to represent the `lockboxes` and their contents.
+Each list element represents a lockbox, and the contents of each lockbox are stored as elements within these lists.
+
+2. **Graph Traversal** ([DFS](https://www.askpython.com/python/examples/depth-first-search-algorithm) or [BFS](https://www.askpython.com/python/examples/breadth-first-search-graph)): The core algorithmic concept in this problem is `graph traversal`. The lockboxes and their keys can be seen as `nodes` and edges in a graph.
+You need to determine if there's a path from the first box to all other boxes. 
+This can be accomplished using either `Depth-First Search (DFS)` or `Breadth-First Search (BFS)` algorithms to traverse the graph.
+
+3. **Visited Flags**: To keep track of which boxes have been visited during the traversal, a `list` (or array) of `boolean values`, often referred to as "*visited flags*", is used.
+Each element in this list corresponds to a box, and it is marked as `True` when the box is visited and `False` when it's not.
+
+4. **Recursion** (*in some implementations*): Some solutions use recursive functions to traverse the graph.
+In these implementations, a function is called recursively to explore each box's keys and continue the traversal.
+
+5. **Loops Detection** (*in advanced implementations*): In more advanced versions of the problem,
+you might need to implement a `loop detection mechanism` to handle cases where there are `circular dependencies` among the boxes.
+This requires more complex algorithms and data structures like `sets` or `dictionaries` to detect loops.
