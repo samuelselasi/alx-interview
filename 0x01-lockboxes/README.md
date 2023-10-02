@@ -1,7 +1,7 @@
 # 0x01. Lockboxes
 #### `Algorithm` `Python`
 
-![a2ca62cd87e0](https://github.com/samuelselasi/alx-interview/assets/85158665/35d7c515-9ae0-46e6-972d-961f27e6d94b)
+![download](https://github.com/samuelselasi/alx-interview/assets/85158665/a2c10d3e-3dad-4bcf-b0aa-c71c369dfc1b)
 
 ## Requirements
 ### General
@@ -82,6 +82,7 @@ you might need to implement a `loop detection mechanism` to handle cases where t
 This requires more complex algorithms and data structures like `sets` or `dictionaries` to detect loops.
 
 ## Depth-First Search
+![a2ca62cd87e0](https://github.com/samuelselasi/alx-interview/assets/85158665/35d7c515-9ae0-46e6-972d-961f27e6d94b)
 
 1. **Starting Point**: The `DFS` algorithm begins at a designated starting point,
 which could be a specific node in a graph or a root node in a tree.
