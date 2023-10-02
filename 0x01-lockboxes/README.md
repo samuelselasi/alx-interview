@@ -80,3 +80,38 @@ In these implementations, a function is called recursively to explore each box's
 5. **Loops Detection** (*in advanced implementations*): In more advanced versions of the problem,
 you might need to implement a `loop detection mechanism` to handle cases where there are `circular dependencies` among the boxes.
 This requires more complex algorithms and data structures like `sets` or `dictionaries` to detect loops.
+
+## Depth-First Search
+
+1. **Starting Point**: The `DFS` algorithm begins at a designated starting point,
+which could be a specific node in a graph or a root node in a tree.
+
+2. **Visited Nodes**: To keep track of which nodes have been visited,
+a data structure (usually an `array` or `list`) called "`visited`" or "`seen`" is used.
+Initially, all nodes are marked as `unvisited` or `False`.
+
+3. **Depth-First Exploration**: The algorithm starts at the initial node and
+explores as deeply as possible along each branch before backtracking.
+Here are the steps for each node:
+
+	a. **Visit the Node**: When a node is encountered, it is marked as `visited`.
+
+	b. **Explore Unvisited Neighbors**: The algorithm then explores all unvisited neighboring nodes (adjacent nodes)
+of the current node. It selects one neighbor and proceeds to visit it.
+
+	c. **Recursion** or **Stack**: DFS can be implemented using either `recursion` or an explicit [stack data structure](https://www.askpython.com/python/python-stack).
+In the `recursive` approach, the algorithm calls itself for each unvisited neighbor, effectively pushing
+the current node onto a call stack. 
+In the `stack-based` approach, an explicit stack data structure is used to manage the nodes to be explored.
+
+	d. **Backtracking**: When all neighbors have been visited (or there are no unvisited neighbors),
+the algorithm backtracks. This means it returns to the previous node (*if using recursion*) or `pops` nodes from the stack (*if using a stack*).
+
+4. **Repeat**: Steps `3a` to `3d` are repeated until all nodes have been visited or until a specific target node or condition is reached.
+
+5. **Result**: The `DFS` traversal may produce different results depending on the order of exploration. 
+You can capture various types of information during the traversal, such as `pre-order` and `post-order traversal`, which help determine the sequence in which nodes were visited.
+
+## Whiteboarding
+
+
