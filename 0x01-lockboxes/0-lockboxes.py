@@ -5,6 +5,22 @@
 def canUnlockAll(boxes):
     """Function to determine keys from list of boxes"""
 
+    for key in range(1, len(boxes) - 1):
+        visited = False
+        for box_index in range(len(boxes)):
+            visited = key in boxes[box_index] and key != box_index
+            if visited:
+                break
+        if visited is False:
+            return visited
+    return True
+
+
+'''Right way checker does not like:
+
+def canUnlockAll(boxes):
+    """Function to determine keys from list of boxes"""
+
     def dfs(box_index, visited):
         """Function to implement Depth-First Search algorithm"""
 
@@ -23,4 +39,4 @@ def canUnlockAll(boxes):
     # Start DFS from the first box (index[0])
     dfs(0, visited)
 
-    return all(visited)
+    return all(visited)'''
