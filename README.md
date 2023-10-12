@@ -23,3 +23,4 @@ This repository contains top interview preparation questions and answers for Sof
 
 0. [0x00-pascal_triangle](./0x00-pascal_triangle)
 1. [0x01-lockboxes](./0x01-lockboxes)
+2. [0x02-minimum_operations](./0x02-minimum_operations)
