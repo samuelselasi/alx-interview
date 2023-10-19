@@ -1,5 +1,6 @@
 # 0x03. Log Parsing
 #### `Algorithm` `Python`
+![images](https://github.com/samuelselasi/alx-interview/assets/85158665/a00705c3-64ad-46e4-8d30-e243487d081b)
 
 ## Requirements
 ### General
