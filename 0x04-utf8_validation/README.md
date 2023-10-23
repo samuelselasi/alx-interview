@@ -58,3 +58,24 @@ True
 False
 carrie@ubuntu:~/0x04-utf8_validation$
 ```
+
+## Pseudocode
+```
+1. Initialize variable `remainingBytes` to 0
+2. Define constant `BIT7` as (1 << 7)  # Represents the leftmost bit (bit 7)
+3. Define constant `BIT6` as (1 << 6)  # Represents the second leftmost bit (bit 6)
+4. Loop through each `byte` in the `data` list:
+    5. Initialize `bitPosition` to `BIT7`
+    6. If `remainingBytes` is 0:
+        7. While `byte` & `bitPosition` is True:
+            8. Increment `remainingBytes` by 1
+            9. Right-shift `bitPosition` by 1
+        10. If `remainingBytes` is still 0, continue to the next byte
+        11. If `remainingBytes` is 1 or greater than 4, return False
+    12. Else (there are still bytes left to complete a character):
+        13. If `byte` & `BIT7` is False or `byte` & `BIT6` is True:
+            14. Return False
+    15. Decrement `remainingBytes` by 1
+16. If `remainingBytes` is 0, return True, indicating a valid UTF-8 encoding
+17. Otherwise, return False
+```
