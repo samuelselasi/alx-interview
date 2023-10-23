@@ -1,5 +1,6 @@
 # 0x04. UTF-8 Validation
 #### `Algorithm` `Python`
+![FSS-UTF_1992_UTF-8_1993](https://github.com/samuelselasi/alx-interview/assets/85158665/1c44f57a-ca98-4e17-96c4-63ff5d919368)
 
 ## Resources
 **Read or watch**:
