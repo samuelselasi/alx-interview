@@ -14,6 +14,7 @@
 ## Tasks
 
 ![Judit-photo1_602x433 (1)](https://github.com/samuelselasi/alx-interview/assets/85158665/bcf66020-2431-45fd-a122-cf8f9bedd520)
+
 <sup>Chess grandmaster [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r), the strongest female chess player of all time</sup>
 
 The **N queens** puzzle is the challenge of placing **N** non-attacking queens on an **N×N** chessboard. Write a program that solves the **N queens** problem.
