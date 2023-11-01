@@ -26,3 +26,4 @@ This repository contains top interview preparation questions and answers for Sof
 2. [0x02-minimum_operations](./0x02-minimum_operations)
 3. [0x03-log_parsing](./0x03-log_parsing)
 4. [0x04-utf8_validation](./0x04-utf8_validation)
+5. [0x05-nqueens](./0x05-nqueens)
