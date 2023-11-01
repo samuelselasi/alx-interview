@@ -43,3 +43,29 @@ julien@ubuntu:~/0x08. N Queens$ ./0-nqueens.py 6
 [[0, 4], [1, 2], [2, 0], [3, 5], [4, 3], [5, 1]]
 julien@ubuntu:~/0x08. N Queens$
 ```
+
+## Background
+
+The main goal of the `N-Queens` problem is to determine all possible solutions (or one solution) for a given `N`, which represents the `size` of the chessboard and the number of queens to be placed.
+A solution is a configuration of queens on the board where no two queens threaten each other.
+
+The problem is essentially an example of the classic "`backtracking`" algorithm.
+The basic idea is to start with an empty board and then place queens one by one, ensuring that no two queens attack each other.
+If, at any point, you find that a queen cannot be placed without attacking another, you backtrack and explore other possibilities until a solution is found or all possibilities have been exhausted.
+
+Here's a high-level approach to solving the `N-Queens` problem:
+
+1. Start with an empty `N x N` chessboard.
+
+2. Place a queen in the first row(`a1`) and move to the next row.
+
+3. In the next row, try placing the queen in each column one by one. If a queen can be placed without attacking others, move to the next row.
+
+4. If all columns in the current row have been tried and none of them work, backtrack to the previous row and explore other possibilities.
+
+5. Continue this process until you've successfully placed `N` queens on the board or have explored all possible configurations.
+
+6. Collect and return the valid solutions.
+
+The `N-Queens` problem can be solved using various programming languages and algorithms, such as **recursive backtracking** or **constraint propagation**.
+Solving it efficiently for larger `N` values can be quite challenging, and it's a good exercise in problem-solving and algorithm design.
