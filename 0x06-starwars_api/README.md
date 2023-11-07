@@ -1,5 +1,6 @@
 # 0x06. Star Wars API
 #### `Algorithm` `API` `JavaScript`
+![starwars](https://github.com/samuelselasi/alx-interview/assets/85158665/9d2eee0e-a0d3-480a-a36c-30a3027de4c5)
 
 ## Requirements
 ### General
