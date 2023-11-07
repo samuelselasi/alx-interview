@@ -27,3 +27,4 @@ This repository contains top interview preparation questions and answers for Sof
 3. [0x03-log_parsing](./0x03-log_parsing)
 4. [0x04-utf8_validation](./0x04-utf8_validation)
 5. [0x05-nqueens](./0x05-nqueens)
+6. [0x06-starwars_api](./0x06-starwars_api)
