@@ -1,6 +1,8 @@
 # 0x02. Minimum Operations
 #### `Algorithm` `Python`
 
+![factorization_python_banner](https://github.com/samuelselasi/alx-interview/assets/85158665/a87d9594-5d4c-4a4d-bad7-cea05c49ccb8)
+
 ## Requirements
 ### General
 * Allowed editors: `vi`, `vim`, `emacs`
