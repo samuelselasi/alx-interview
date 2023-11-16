@@ -1,5 +1,6 @@
 # 0x05. N Queens
 ### `Algorithm` `Python`
+![1_Zm2pbDR5CS2w2xeUbTBxQQ](https://github.com/samuelselasi/alx-interview/assets/85158665/70227c50-e292-455f-98ef-974d25e7496b)
 
 ## Requirements
 ### General
