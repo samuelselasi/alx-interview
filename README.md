@@ -29,3 +29,4 @@ This repository contains top interview preparation questions and answers for Sof
 5. [0x05-nqueens](./0x05-nqueens)
 6. [0x06-starwars_api](./0x06-starwars_api)
 7. [0x07-rotate_2d_matrix](./0x07-rotate_2d_matrix)
+8. [0x08-making_change](./0x08-making_change)
