@@ -1,5 +1,6 @@
 # 0x08. Making Change
 #### `Algorithm` `Python`
+![slide_19](https://github.com/samuelselasi/alx-interview/assets/85158665/388cf672-42f2-4fff-9300-5476da708ebc)
 
 ## Requirements
 ### General
