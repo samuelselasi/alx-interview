@@ -1,5 +1,6 @@
 # 0x09. Island Perimeter
 #### `Algorithm` `Python`
+![image](https://github.com/samuelselasi/alx-interview/assets/85158665/14c713b1-5120-47ca-a9ce-21438714b8e0)
 
 ## Requirements
 ### General
