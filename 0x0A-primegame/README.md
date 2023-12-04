@@ -1,6 +1,9 @@
 # 0x0A. Prime Game
 #### `Algorithm` `Python`
 
+![0_5vQhB_GGwQlRN_Pm](https://github.com/samuelselasi/alx-interview/assets/85158665/89d82a55-ac26-42ce-a377-f70ecf922ca3)
+
+
 ## Requirements
 ### General
 * Allowed editors: `vi`, `vim`, `emacs`
