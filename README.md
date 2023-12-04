@@ -31,3 +31,4 @@ This repository contains top interview preparation questions and answers for Sof
 7. [0x07-rotate_2d_matrix](./0x07-rotate_2d_matrix)
 8. [0x08-making_change](./0x08-making_change)
 9. [0x09-island_perimeter](./0x09-island_perimeter)
+10. [0x0A-primegame](./0x0A-primegame)
