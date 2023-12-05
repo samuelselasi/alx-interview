@@ -72,8 +72,85 @@ carrie@ubuntu:~/0x0A-primegame$
 # Whiteboarding
 
 ## Description
-* tbc
+
+
+The `Sieve of Eratosthenes` is an ancient algorithm for finding all prime numbers up to a given limit.
+It efficiently identifies and eliminates multiples of each prime,
+gradually sieving out non-prime numbers until only the primes are left.
+
+Here's a step-by-step explanation of the algorithm:
+
+#### Create a list of integers: 
+- Start with a list of integers from `2` to the desired limit. 
+  For example, if you want to find all primes up to `30`, your initial list would be 
+  `[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]`.
+
+#### Start with the first prime:
+- The smallest prime number is `2`.
+  Mark `2` as prime, and then cross out all multiples of `2` in the list (*excluding 2 itself*).
+
+#### Move to the next number:
+- Move to the next number in the list that is not crossed out.
+  This is the next prime number.
+  Mark it as prime and cross out all multiples of this new prime.
+
+#### Repeat until finished:
+- Continue this process, moving to the next non-crossed-out number and marking it as prime,
+  while crossing out its multiples.
+  Repeat until you've processed all numbers up to the square root of the original limit.
+
+#### Primes remaining:
+- After completing the above steps, the remaining numbers in the list that are not crossed out are prime.
+
+The `Sieve of Eratosthenes` is efficient because it avoids redundant work.
+When eliminating multiples of a prime, you only need to start crossing out at the square of that prime,
+as all smaller multiples would have been crossed out when their smaller prime factors were processed.
+
+For example, when eliminating multiples of `2`, you start crossing out at `4` because `2 * 2` is `4`.
+When eliminating multiples of `3`, you start crossing out at `9` because `3 * 3` is `9`, and so on.
+
+This algorithm has a time complexity of `O(n log log n)`,
+making it one of the most efficient ways to find all primes within a certain range.
 
 ## Pseudocode
-* tbc
+function findWinner(totalRounds, roundNumbers):
+    if roundNumbers is empty or totalRounds < 1:
+        return None
+
+    highestNumber = find the biggest number in roundNumbers
+    isPrime = initialize a list of True values from 2 to max(highestNumber + 1, 2)
+
+    // Mark multiples of numbers as not prime
+    for i from 2 to square root of highestNumber:
+        if isPrime[i] is True:
+            for j from i*i to highestNumber, increase by i:
+                set isPrime[j] to False
+
+    set isPrime[0] and isPrime[1] to False
+    cumulativePrimes = 0
+
+    // Count the number of primes up to each index
+    for i from 0 to length of isPrime:
+        if isPrime[i] is True:
+            cumulativePrimes += 1
+        set isPrime[i] to cumulativePrimes
+
+    winner = ''
+    player1Score = 0
+
+    // Count how many primes Maria picks
+    for n in roundNumbers:
+        if isPrime[n] modulo 2 is 1:
+            increment player1Score
+
+    // Decide the winner based on the scores
+    if player1Score * 2 is equal to length of roundNumbers:
+        set winner to None
+    if player1Score * 2 > length of roundNumbers:
+        set winner to "Maria"
+    else:
+        set winner to "Ben"
+
+    return winner
+
 
