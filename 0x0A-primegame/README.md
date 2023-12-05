@@ -1,9 +1,7 @@
 # 0x0A. Prime Game
 #### `Algorithm` `Python`
 
-![0_5vQhB_GGwQlRN_Pm](https://github.com/samuelselasi/alx-interview/assets/85158665/1ea675ae-cfa5-439c-a022-23febd0271c9)
-
-
+![image](https://github.com/samuelselasi/alx-interview/assets/85158665/e442e69f-f004-4b05-9af0-0186aa323dba)
 
 ## Requirements
 ### General
