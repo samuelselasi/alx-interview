@@ -53,3 +53,53 @@ Min number of operations to reach 4 characters: 4
 Min number of operations to reach 12 characters: 7
 carrie@ubuntu:~/0x02-minoperations$
 ```
+
+# Overview
+
+Let's dive into the details of each step in the `minOperations` function:
+
+1. **Initialization**:
+```
+operations_needed = 0
+divisor = 2
+```
+	* `operations_needed` is a variable that will keep track of the total operations needed.
+
+	* `divisor` is initialized to `2` because we start the factorization process from the smallest prime number.
+
+2. **Outer Loop - Prime Factorization**:
+```
+while n > 1:
+```
+* This outer loop continues until `n` becomes `1`. It ensures that the process of factorization continues until `n` is completely factored into prime numbers.
+
+3. **Inner Loop - Divisibility Check**:
+```
+while n % divisor == 0:
+```
+	* This inner loop executes as long as the current divisor evenly divides `n`. It checks for divisibility by the current divisor and proceeds only if `n` is divisible.
+
+4. **Update Operations and `n`**:
+```
+operations_needed += divisor
+n /= divisor
+```
+	* Inside the inner loop, if `n` is divisible by the current divisor, the divisor is added to `operations_needed`. This step indicates that an operation is performed to get the factorized prime number.
+	* `n` is then updated by dividing it by the divisor, effectively reducing `n` to its next factor.
+
+5. **Increment Divisor**:
+```
+divisor += 1
+```
+	* After completing the inner loop, the outer loop increments the divisor. This step moves to the next potential prime factor for further factorization.
+
+6. **Return Total Operations**:
+```
+return operations_needed
+```
+	* Once the outer loop completes (i.e., `n` becomes `1`), the function returns the total `operations_needed`. This value represents the sum of prime factors of the original `n`, which corresponds to the minimum number of operations needed to obtain the desired number of 'H' characters.
+
+
+In summary, the algorithm leverages prime factorization to represent the given number `n` as the product of its prime factors.
+The sum of these prime factors is then returned as the minimum number of operations needed to achieve the desired outcome.
+This approach is based on the fundamental theorem of arithmetic, which states that every integer greater than `1` is either a prime number itself or can be factorized uniquely into a product of prime numbers.
